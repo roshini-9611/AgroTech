@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        /* https://www.youtube.com/watch?v=qDww4CbxtD4&ab_channel=w3newbie */
+        /* body{
+            margin: 0;
+            padding: 0;
+        } */
+        .slider{
+            overflow: hidden;
+        }
+
+        .slider figure {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 10s slider infinite;
+        }
+        img {
+            /* width: 20vw; */
+            height: 50vh;
+        }
+        .slider figure img {
+            float: left;
+            width: 20%;
+        }
+        @keyframes slider {
+            0% {
+                left: 0;
+            }
+            33% {
+                left: 0;
+            }
+            38% {
+                left: -100%;
+            }
+            66% {
+                left: -100%;
+            }
+            71% {
+                left: -200%;
+            }
+            90% {
+                left: -200%;
+            }
+            100% {
+                left: -300%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <figure>
+            <img src="assets/farm1.jpg" alt="1" />
+            <img src="assets/farm2.webp" alt="2" />
+            <img src="assets/farm3.jpeg" alt="3" />
+            <!-- <img src="assets/farm2.webp" alt="2" /> -->
+            <img src="assets/farm1.jpg" alt="1" />
+        </figure>
+    </div>
+</body>
+</html>
